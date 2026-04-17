@@ -5,14 +5,14 @@ Homebrew tap for [Immortal](https://github.com/Nagendhra-web/Immortal) — the s
 ## Install
 
 ```bash
-brew tap mnah05/immortal
+brew tap Nagendhra-web/immortal
 brew install immortal
 ```
 
 Or install directly:
 
 ```bash
-brew install mnah05/immortal/immortal
+brew install Nagendhra-web/immortal/immortal
 ```
 
 ## Usage

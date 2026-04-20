@@ -5,21 +5,21 @@
 class Immortal < Formula
   desc "Self-healing engine. Your apps never die."
   homepage "https://github.com/Nagendhra-web/Immortal"
-  version "0.6.3"
+  version "0.7.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Nagendhra-web/Immortal/releases/download/v0.6.3/immortal_darwin_amd64.tar.gz"
-      sha256 "fb59ba2d6a36aa5093044c8ff222422f9bc7e00d5d8a2ff624f2603cc2edb0b2"
+      url "https://github.com/Nagendhra-web/Immortal/releases/download/v0.7.0/immortal_darwin_amd64.tar.gz"
+      sha256 "68fe794490a18d333be352d34df05c5dbd6a31f8fc4512fbf5937c5900c4497b"
 
       define_method(:install) do
         bin.install "immortal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Nagendhra-web/Immortal/releases/download/v0.6.3/immortal_darwin_arm64.tar.gz"
-      sha256 "4aa38cff4656be25c46856daea2201072d9c30b301f82c94b6880fbf886cf89c"
+      url "https://github.com/Nagendhra-web/Immortal/releases/download/v0.7.0/immortal_darwin_arm64.tar.gz"
+      sha256 "f3c28176ba174608697cc15c8472424301fc35766558bed7c499a59e11cc4b54"
 
       define_method(:install) do
         bin.install "immortal"
@@ -29,15 +29,15 @@ class Immortal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Nagendhra-web/Immortal/releases/download/v0.6.3/immortal_linux_amd64.tar.gz"
-      sha256 "c263f3bf3dbaf8669f49127d37a5126cb01ca27ea27db8e007661c58dd9762a2"
+      url "https://github.com/Nagendhra-web/Immortal/releases/download/v0.7.0/immortal_linux_amd64.tar.gz"
+      sha256 "d8240bbbf628090a0ac3054bb8a610a57bf64c6646662f1900f790d2bf50f49c"
       define_method(:install) do
         bin.install "immortal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Nagendhra-web/Immortal/releases/download/v0.6.3/immortal_linux_arm64.tar.gz"
-      sha256 "6867d3e59f40a65f9775aa3d09eded220eac084f80166503197d3157998a1196"
+      url "https://github.com/Nagendhra-web/Immortal/releases/download/v0.7.0/immortal_linux_arm64.tar.gz"
+      sha256 "17523dd8156dd747a7ea4bf567c948cb4591291a907b7c10baaa590646298bcf"
       define_method(:install) do
         bin.install "immortal"
       end
